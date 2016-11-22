@@ -8,7 +8,7 @@ server.use(bodyParser.json());
 server.set('view engine','ejs');
 
 var port = process.env.PORT || 3978;
-var app = new alexa.app('test');
+var app = new alexa.app('welcome');
 var name;
 var claims = [];
 
