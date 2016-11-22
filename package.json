@@ -1,0 +1,18 @@
+{
+  "name": "welcome",
+  "version": "1.0.0",
+  "description": "welcome home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "body-parser": "^1.15.2",
+    "debug": "^2.2.0",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
