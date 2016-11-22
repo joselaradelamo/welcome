@@ -19,13 +19,13 @@ app.launch(function(request, response) {
 
 app.intent("visitors",
 	{
-		"slots":{}
-		,"utterances": [
+		"slots":{},
+		"utterances": [
 			"no"
 		]
 	},
 	function(request,response) {
-		var responseText = "<s>Hi! Welcome to Jose's home. The Wi-Fi password is x and you have some fresh beer in the fridge</s>"
+		var responseText = "<s>Hi! Welcome to Jose's home. The Wi-Fi password is x and you have some fresh beer in the fridge</s>";
 		response.say(responseText);
 		response.shouldEndSession(false);		
 	}
@@ -33,13 +33,13 @@ app.intent("visitors",
 
 app.intent("alone",
 	{
-		"slots":{}
-		,"utterances": [
+		"slots":{},
+		"utterances": [
 			"yes"
 		]
 	},
 	function(request,response) {
-		var responseText = "<s>Hi! Welcome home! I hope your day was well</s>"
+		var responseText = "<s>Hi! Welcome home! I hope your day was well</s>";
 		response.say(responseText)
 		response.shouldEndSession(false);		
 	}
@@ -47,8 +47,8 @@ app.intent("alone",
 
 app.intent("goodbyeIntent",
 	{
-		"slots":{}
-		,"utterances": [
+		"slots":{},
+		"utterances": [
 			"goodbye"
 		]
 	},
