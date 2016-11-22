@@ -25,8 +25,7 @@ app.intent("visitors",
 		]
 	},
 	function(request,response) {
-		var responseText = "<s>Hi! Welcome to Jose's home. The Wi-Fi password is x and you have some fresh beer in the fridge</s>";
-		response.say(responseText);
+		response.say("<s>Hi! Welcome to Jose's home. The Wi-Fi password is x and you have some fresh beer in the fridge</s>");
 		response.shouldEndSession(false);		
 	}
 );
@@ -39,8 +38,7 @@ app.intent("alone",
 		]
 	},
 	function(request,response) {
-		var responseText = "<s>Hi! Welcome home! I hope your day was well</s>";
-		response.say(responseText)
+		response.say("<s>Hi! Welcome home! I hope your day was well</s>");
 		response.shouldEndSession(false);		
 	}
 );
@@ -58,7 +56,7 @@ app.intent("goodbyeIntent",
 	}
 );
 
-app.express(server, "/echo/");
+app.express(server, "/welcome/");
 
 server.listen(port);
 console.log("Listening on port "+port);
